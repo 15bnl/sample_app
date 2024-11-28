@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top{
+    width: 100%;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.top_text{
+    width: 100%;
+    padding-left: 70px;
+    line-height: 30px;
+}
+
+.index_table{
+    width: 100%;
+    padding: 0 30px;
+}
+
+.title{
+    width: 30%;
+}
+
+.body{
+    width: 50%;
+}

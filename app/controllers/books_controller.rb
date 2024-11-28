@@ -1,6 +1,12 @@
 class BooksController < ApplicationController
   protect_from_forgery
   
+  def index
+    @books = Book.all
+    @book = Book.new
+  end
+  
+  
   def new
     @books = Book.all
     @book = Book.new
@@ -19,9 +25,7 @@ class BooksController < ApplicationController
     end
   end
 
-  def index
-    @books = Book.all
-  end
+  
 
   def show
     @book = Book.find(params[:id])
